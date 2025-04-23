@@ -1,0 +1,79 @@
+name: Notify Discord on PR, Discussion
+
+on:
+  discussion:
+    types: [created]
+  discussion_comment:
+    types: [created]
+  pull_request:
+    types: [opened]
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord Notification
+        env:
+          DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+        run: |
+          set -e
+
+          EVENT="${{ github.event_name }}"
+          echo "Triggered by event: $EVENT"
+
+          TYPE=""
+          TITLE=""
+          URL=""
+          AUTHOR=""
+          COMMENT=""
+          STATE=""
+
+          case "$EVENT" in
+            "discussion")
+              TYPE="Discussion"
+              TITLE="${{ github.event.discussion.title }}"
+              URL="${{ github.event.discussion.html_url }}"
+              AUTHOR="${{ github.event.discussion.user.login }}"
+              ;;
+
+            "discussion_comment")
+              TYPE="Discussion 댓글"
+              TITLE="${{ github.event.discussion.title }}"
+              URL="${{ github.event.comment.html_url }}"
+              AUTHOR="${{ github.event.comment.user.login }}"
+              ;;
+
+            "pull_request")
+              TYPE="Pull Request"
+              TITLE="${{ github.event.pull_request.title }}"
+              URL="${{ github.event.pull_request.html_url }}"
+              AUTHOR="${{ github.event.pull_request.user.login }}"
+              ;;
+
+            "pull_request_review")
+              TYPE="PR 리뷰"
+              TITLE="${{ github.event.pull_request.title }}"
+              URL="${{ github.event.review.html_url }}"
+              AUTHOR="${{ github.event.review.user.login }}"
+              ;;
+          esac
+
+          # 메시지 구성
+          if [ "$EVENT" = "discussion_comment" ] || [ "$EVENT" = "pull_request_review" ]; then
+            # 댓글이나 리뷰인 경우
+            MESSAGE="{
+              \"content\": \"$TYPE가 작성되었습니다!\\n작성자: $AUTHOR\\n대상: $TITLE\\n링크: $URL\"
+            }"
+          else
+            # 일반 이벤트 (PR, Discussion 생성)
+            MESSAGE="{
+              \"content\": \"$TYPE가 생성되었습니다!\\n작성자: $AUTHOR\\n제목: $TITLE\\n링크: $URL\"
+            }"
+          fi
+
+          echo "📤 Sending to Discord..."
+          curl -s -X POST "$DISCORD_WEBHOOK" \
+            -H "Content-Type: application/json" \
+            -d "$MESSAGE"
