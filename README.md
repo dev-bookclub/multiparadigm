@@ -39,6 +39,18 @@
 
 ---
 
+## 👨‍👩‍👦 스터디 인원
+
+|                                   [박동현/dhyun2](https://github.com/dhyun2)                                    |                                    [용현/yonghyun421](https://github.com/yonghyun421)                                     |                                   [도혜원/dohye1](https://github.com/dohye1)                                    |
+| :-------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://github.com/dhyun2.png" alt="img" height="150px" width="150px" />](https://github.com/dhyun2) | [<img src="https://github.com/yonghyun421.png" alt="img" height="150px" width="150px" />](https://github.com/yonghyun421) | [<img src="https://github.com/dohye1.png" alt="img" height="150px" width="150px" />](https://github.com/dohye1) |
+
+|                                   [정래한/rae-han](https://github.com/rae-han)                                    |                                   [변지혜/wisdom08](https://github.com/wisdom08)                                    |                                   [이상현/4anghyeon](https://github.com/4anghyeon)                                    |
+| :---------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
+| [<img src="https://github.com/rae-han.png" alt="img" height="150px" width="150px" />](https://github.com/rae-han) | [<img src="https://github.com/wisdom08.png" alt="img" height="150px" width="150px" />](https://github.com/wisdom08) | [<img src="https://github.com/4anghyeon.png" alt="img" height="150px" width="150px" />](https://github.com/4anghyeon) |
+
+---
+
 ## 📖 커리큘럼 및 목차
 
 📌 아래는 책의 전체 목차이며, 스터디 중 일부 조정될 수 있습니다.
