@@ -56,6 +56,7 @@
 📌 아래는 책의 전체 목차이며, 스터디 중 일부 조정될 수 있습니다.
 
 - [학습 가이드](https://github.com/dev-bookclub/multiparadigm/wiki/%F0%9F%93%98-%EB%A9%80%ED%8B%B0%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%8A%A4%ED%84%B0%EB%94%94-%EA%B0%80%EC%9D%B4%EB%93%9C)
+- [1주차 가이드](https://github.com/dev-bookclub/multiparadigm/wiki/1%EC%A3%BC%EC%B0%A8-%EA%B0%80%EC%9D%B4%EB%93%9C)
 
 ---
 
