@@ -55,60 +55,7 @@
 
 📌 아래는 책의 전체 목차이며, 스터디 중 일부 조정될 수 있습니다.
 
-<details>
-<summary><strong>📘 1장. 멀티패러다임이 현대 언어를 확장하는 방법</strong></summary>
-- 반복자 패턴과 일급 함수  
-- 제너레이터 함수와 명령형  
-- 이터레이션 프로토콜과 자바스크립트  
-- 함수형 이터러블 다루기  
-- 인터페이스 기반 설계 vs 상속  
-</details>
-
-<details>
-<summary><strong>📗 2장. 함수형 프로그래밍과 타입 시스템, 그리고 LISP</strong></summary>
-- 타입 추론과 함수 타입  
-- 함수 시그니처의 역할  
-- LISP의 매크로와 메타프로그래밍  
-- Pipe Operator, 고차 함수 조합  
-</details>
-
-<details>
-<summary><strong>📙 3장. 코드 : 객체 : 함수 = Generator : Iterator : LISP</strong></summary>
-- 코드가 곧 데이터인 언어 설계  
-- 하스켈과 함수형 사고  
-- 지연 평가와 안전한 합성  
-</details>
-
-<details>
-<summary><strong>📕 4장. 비동기 프로그래밍</strong></summary>
-- Promise로 비동기 제어  
-- 지연성, 동시성, 에러 핸들링  
-- AsyncIterable, toAsync 함수 설계  
-</details>
-
-<details>
-<summary><strong>📒 5장. 실전 함수형 프로그래밍</strong></summary>
-- 2D 배열, 커머스 데이터 처리  
-- pipe, zip, take, 콜라츠 추측  
-- 백엔드 연계 비동기 처리  
-- 리스트 프로세싱 패턴화  
-</details>
-
-<details>
-<summary><strong>📓 6장. 멀티패러다임 프로그래밍</strong></summary>
-- 템플릿 엔진 구현  
-- 로직은 함수형, 구조는 객체지향  
-- 프런트엔드 개발 라이브러리 만들기  
-- 동시성 핸들링의 멀티패러다임적 접근  
-</details>
-
-<details>
-<summary><strong>📔 7장. 객체지향 프런트엔드 개발과 멀티패러다임</strong></summary>
-- Setting 앱 구현  
-- Todo 앱 구현 및 고도화  
-- 커스텀 이벤트 통신, 전략/상태 패턴  
-- Promise + UI 연동 사례  
-</details>
+- [학습 가이드](https://github.com/dev-bookclub/multiparadigm/wiki/%F0%9F%93%98-%EB%A9%80%ED%8B%B0%ED%8C%A8%EB%9F%AC%EB%8B%A4%EC%9E%84-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D-%EC%8A%A4%ED%84%B0%EB%94%94-%EA%B0%80%EC%9D%B4%EB%93%9C)
 
 ---
 
