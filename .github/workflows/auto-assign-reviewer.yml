@@ -20,7 +20,7 @@ jobs:
           members_response=$(curl -s -X GET \
             -H "Authorization: token ${{ secrets.REVIEWER_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
-            "https://api.github.com/orgs/dev-bookclub/teams/fe-security/members")
+            "https://api.github.com/orgs/dev-bookclub/teams/multiparadigm/members")
 
           # API 응답이 유효한 JSON인지 확인
           if ! echo "$members_response" | jq empty; then
